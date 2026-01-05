@@ -32,13 +32,13 @@ Requirements:
 2. Create a export storage bucket for **Microsoft SQL Server Exports**
 
 ``` shell
-gsutil mb gs://[BUCKET_NAME]/
+gcloud storage buckets create gs://[BUCKET_NAME]/
 ```
 
 3. Create a Dataflow staging storage bucket
 
 ``` shell
-gsutil mb gs://[BUCKET_NAME]/
+gcloud storage buckets create gs://[BUCKET_NAME]/
 ```
 
 4. Through the [Google Cloud Console](https://console.cloud.google.com) create a folder named **tmp** in the newly created bucket for the DataFlow staging files
